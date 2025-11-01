@@ -1,6 +1,7 @@
 # Star Wars Character Explorer
 
 A web app to browse Star Wars characters using the SWAPI API. Built with React and a clean dark theme.
+🔗 Live Preview: https://pgjcxz.csb.app/
 
 ## Running the Project
 
