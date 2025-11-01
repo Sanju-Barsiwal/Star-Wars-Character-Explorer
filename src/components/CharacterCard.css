@@ -1,0 +1,54 @@
+.character-card {
+  cursor: pointer;
+  background: rgba(31, 41, 55, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid #374151;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  border-color: #a6a2a9;
+  transform: scale(1.05);
+  box-shadow: 0 20px 25px -5px rgba(168, 85, 247, 0.2);
+}
+
+.character-card:focus {
+  outline: 2px solid #a6a2a9;
+  outline-offset: 2px;
+}
+
+.character-image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.character-gradient-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--gradient-from), var(--gradient-to));
+  opacity: 0.2;
+}
+
+.character-image {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover .character-image {
+  transform: scale(1.1);
+}
+
+.character-info {
+  padding: 1rem;
+}
+
+.character-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;  
+  text-align: center;
+}
